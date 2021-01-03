@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `My Portfolio`
+    title: `VS`
   },
   plugins: [
     {

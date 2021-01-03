@@ -7,7 +7,7 @@ const myFiles = ({ data }) => {
     return (
         <Layout>
             <div>
-        <h1>My Site's Files</h1>
+        <h1>My Site&apos;s Files</h1>
         <table>
           <thead>
             <tr>
