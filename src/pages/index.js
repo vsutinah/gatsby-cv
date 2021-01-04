@@ -1,9 +1,11 @@
 import React, { Fragment } from "react"
 import Layout from '../components/Layout'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
     <Fragment>
+      <Header/>
       <Layout>
         <div id='intro'>
           <h1>Hi! My name is Vincent Sutinah!</h1>
@@ -37,7 +39,21 @@ export default function Home() {
         </div>
         <div id='contact'>
           <h1>Contact Me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, minima.</p>
+            <h5>I&apos;d love to talk! Email me at the address below:</h5>
+            <p>
+                <a href="vincentsutinah@gmail.com">vincentsutinah@gmail.com</a>
+            </p>
+            <h5>You can also view my online profiles here:</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/vincentsutinah/">
+                    LinkedIn
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/vsutinah/">
+                    GitHub
+                </a>
+            </p>
         </div>
       </Layout>
     </Fragment>
