@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Section from '../components/Section'
 import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
-import { Figure, Button, Container, Row, Col } from 'react-bootstrap'
+import { Carousel ,CardDeck, Card, Figure, Button, Container, Row, Col } from 'react-bootstrap'
 import html5 from '../imgs/html5.png';
 import css from '../imgs/css.png';
 import javascript from '../imgs/javascript.png';
@@ -16,6 +16,7 @@ import cv from '../static/CV_Vincent Sutinah (SoftDev).pdf'
 import { FaFileDownload, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
+
   return (
     <Fragment>
       <Header/>
@@ -23,21 +24,21 @@ export default function Home() {
         <Fade left>
         <Section id='intro'>
           <h1>Hi! My name is Vincent Sutinah!</h1>
-          <p>I&apos;m a Computer Science graduate looking for opportunities that will allow me to gain experience as a developer.</p>
+          <p>I&apos;m a Computer Science graduate specializing in Data Science and I am looking for opportunities that will allow me to gain experience as a web developer.</p>
           <p>I will be updating this website with more content, so stay tuned!</p>
         </Section>
         </Fade>
         <Fade right>
         <Section id='about'>
           <h1>About Me</h1>
-            <p>Data science was something I&apos;ve heard in various conversations regarding the IT industry. Having the power to predict results, optimize processes and automate tasks piqued my interest. What made me jump into the rabbit hole were the potential applications that it has to improve our lifestyle.</p>
-
             <p>I have recently graduated with a Distinction average, and with it, I&apos;ve managed to accomplish various things. From understanding and training different machine learning models, to analysing large datasets 
             and visualising them to offer innovative ideas, I have culminated the results of my 3-year learning with the development of a web app that applies all of the knowledge and skills I have obtained from learning about data science.</p>
 
             <p>Whilst learning more about data science, I have also dabbled in web and software development, which led me to design and develop simple web apps, both alone and with colleagues I&apos;ve met. It also led me to discover that my true passion lies mainly in coding, development and designing apps.</p>
 
             <p>As such, I have decided to look for opportunities that would grant me industry experience to develop and maintain scalable apps. While doing so, I continue to work on my side projects that focus on using NodeJS and React to further hone my skills.</p>
+
+            <p>In the future, I wwould look forward to develop scalable software that will be essential for the data science industry, using the data science knowledge I have and the development skills that I am currently training.</p>
         </Section>
         </Fade>
         <Fade left>
@@ -100,13 +101,54 @@ export default function Home() {
         <Fade right>
         <Section id='education'>
           <h1>Education</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis?</p>
+          <CardDeck>
+            <Card>
+              <Card.Body>
+                <Card.Title>Diploma of Information Technology</Card.Title>
+                <Card.Subtitle className='mb-2 text-muted'>Oct 2016 - June 2017</Card.Subtitle>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Card.Body>
+                <Card.Title>Bachelor of Computer Science</Card.Title>
+                <Card.Subtitle className='mb-2 text-muted'>Jul 2017 - Dec 2019</Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </CardDeck>
         </Section>
         </Fade>
         <Fade left>
         <Section id='projects'>
-          <h1>My Projects</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem?</p>
+          <h1>My Side Projects</h1>
+            <CardDeck>
+              <Card>
+              <Card.Body>
+                <Card.Title>Project 1</Card.Title>
+                <Card.Text>Project Description</Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className='text-muted align-center'>In progress</small>
+              </Card.Footer> 
+              </Card>       
+              <Card>
+                <Card.Body>
+                  <Card.Title>Project 2</Card.Title>
+                  <Card.Text>Project Description</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <small className='text-muted align-center'>In progress</small>
+                </Card.Footer>
+              </Card>            
+              <Card>
+                <Card.Body>
+                  <Card.Title>Project 3</Card.Title>
+                  <Card.Text>Project Description</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <small className='text-muted align-center'>In progress</small>
+                </Card.Footer>
+              </Card>
+              </CardDeck>
         </Section>
         </Fade>
         <Fade right>
@@ -140,3 +182,9 @@ export default function Home() {
     </Fragment>
   )
 }
+
+
+
+
+          
+            
