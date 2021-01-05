@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Section from '../components/Section'
 import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Figure, Button, Container, Row, Col } from 'react-bootstrap'
 import html5 from '../imgs/html5.png';
 import css from '../imgs/css.png';
 import javascript from '../imgs/javascript.png';
@@ -12,6 +12,8 @@ import node from '../imgs/nodejs.png';
 import python from '../imgs/python.png';
 import rprogramming from '../imgs/rprogramming.png';
 import tableau from '../imgs/tableau.png';
+import cv from '../static/CV_Vincent Sutinah (SoftDev).pdf'
+import { FaFileDownload, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -44,17 +46,52 @@ export default function Home() {
           <Container fluid>
             <Zoom >
               <Row>
-                <Col><img src={html5} alt="HTML5"/></Col>
-                <Col><img src={css} alt="CSS"/></Col>
-                <Col><img src={javascript} alt="JavaScript"/></Col>
-                <Col><img src={node} alt="Node JS"/></Col>
+                <Col>
+                <Figure>
+                  <Figure.Image src={html5} alt="HTML5"/>
+                  <Figure.Caption>HTML</Figure.Caption>
+                </Figure>
+                </Col>
+                <Col>
+                <Figure>
+                  <Figure.Image src={css} alt="CSS"/>
+                  <Figure.Caption>CSS</Figure.Caption>
+                </Figure>
+                </Col>
+                <Col>
+                <Figure>
+                  <Figure.Image src={javascript} alt="JavaScript"/>
+                  <Figure.Caption>JavaScript</Figure.Caption>
+                </Figure>
+                </Col>
+                <Col>
+                <Figure>
+                  <Figure.Image src={node} alt="Node JS"/>
+                  <Figure.Caption>Node JS</Figure.Caption>
+                </Figure>
+                </Col>
               </Row>
             </Zoom>
             <Zoom >
               <Row>
-                <Col><img src={python} alt="Python"/></Col>
-                <Col><img src={rprogramming} alt="R Programming"/></Col>
-                <Col><img src={tableau} alt="Tableau"/></Col>
+                <Col>
+                <Figure>
+                  <Figure.Image src={python} alt="Python"/>
+                  <Figure.Caption>Python</Figure.Caption>
+                </Figure>
+                </Col>
+                <Col>
+                <Figure>
+                  <Figure.Image src={rprogramming} alt="R Programming"/>
+                  <Figure.Caption>R</Figure.Caption>
+                </Figure>
+                </Col>
+                <Col>
+                <Figure style={{ margin: `2.5rem 0` }}>
+                  <Figure.Image src={tableau} alt="Tableau"/>
+                  <Figure.Caption style={{ marginTop: `1.75rem`}}>Tableau</Figure.Caption>
+                </Figure>
+                </Col>
               </Row>
             </Zoom>
           </Container>
@@ -75,7 +112,8 @@ export default function Home() {
         <Fade right>
         <Section id='resume'>
           <h1>Resume</h1>
-          <p>Feel free to download my resume by clicking the button below!</p>
+          <p>Feel free to download my resume by clicking the button below! </p>
+          <Button variant='primary' href={cv} download><FaFileDownload/> Download </Button>
         </Section>
         </Fade>
         <Fade left >
@@ -83,18 +121,18 @@ export default function Home() {
           <h1>Contact Me</h1>
             <h5>I&apos;d love to talk! Email me at the address below:</h5>
             <p>
-                <a href="vincentsutinah@gmail.com">vincentsutinah@gmail.com</a>
+                <a href="mailto:vincentsutinah@gmail.com">vincentsutinah@gmail.com</a>
             </p>
             <h5>You can also view my online profiles here:</h5>
             <p>
-                <a href="https://www.linkedin.com/in/vincentsutinah/">
-                    LinkedIn
-                </a>
+                <Button href="https://www.linkedin.com/in/vincentsutinah/" target='_blank'>
+                    <FaLinkedinIn /> LinkedIn
+                </Button>
             </p>
             <p>
-                <a href="https://github.com/vsutinah/">
-                    GitHub
-                </a>
+                <Button variant='dark' href="https://github.com/vsutinah/" target='_blank'>
+                    <FaGithub /> GitHub
+                </Button>
             </p>
         </Section>
         </Fade>

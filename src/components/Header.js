@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <header>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="mb-5">
-                <Navbar.Brand href="#intro" className='ml-5'>{data.site.siteMetadata.title}</Navbar.Brand>
+                <Navbar.Brand style={{ fontSize: `2rem` }} href="#intro" className='ml-5'>{data.site.siteMetadata.title}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mr-3">
