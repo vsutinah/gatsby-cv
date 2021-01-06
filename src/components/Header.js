@@ -20,7 +20,15 @@ const Header = () => {
     return (
         <header>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="mb-5">
-                <Navbar.Brand style={{ fontSize: `2rem` }} href="#intro" className='ml-5'>{data.site.siteMetadata.title}</Navbar.Brand>
+                <Navbar.Brand 
+                style={{ fontSize: `2rem` }} 
+                href="#intro" 
+                className='ml-5'
+                onClick={() => scroller.scrollTo('intro', {
+                    smooth: true,
+                    offset: -70,
+                    duration: 400
+                })}>{data.site.siteMetadata.title}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mr-3">
@@ -71,8 +79,7 @@ const Header = () => {
                         duration: 400
                     })}
                     href='#contact'>Contact Me
-                    </Nav.Link> 
-                                       
+                    </Nav.Link>             
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
