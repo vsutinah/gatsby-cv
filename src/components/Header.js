@@ -47,7 +47,15 @@ const Header = () => {
                         duration: 400
                     })}
                     href='#skills'>Skills
-                    </Nav.Link> 
+                    </Nav.Link>
+                    <Nav.Link 
+                    onSelect={() => scroller.scrollTo('projects', {
+                        smooth: true,
+                        offset: -70,
+                        duration: 400
+                    })}
+                    href='#projects'>Projects
+                    </Nav.Link>   
                     <Nav.Link 
                     onSelect={() => scroller.scrollTo('education', {
                         smooth: true,
@@ -56,14 +64,6 @@ const Header = () => {
                     })}
                     href='#education'>Education
                     </Nav.Link> 
-                    <Nav.Link 
-                    onSelect={() => scroller.scrollTo('projects', {
-                        smooth: true,
-                        offset: -70,
-                        duration: 400
-                    })}
-                    href='#projects'>Projects
-                    </Nav.Link>  
                     <Nav.Link 
                     onSelect={() => scroller.scrollTo('resume', {
                         smooth: true,
