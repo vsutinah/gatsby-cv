@@ -8,21 +8,21 @@ const Contact = () => {
         <div>
             <Card>
                 <Card.Title className={'mt-3'}>You can contact me through these platforms!</Card.Title>
-                <Row>
-                    <Col className={'mb-3'}>
+                <Row className={'mt-3 mb-3'}>
+                    <Col>
                         <a href="mailto:vincentsutinah@gmail.com"><FaEnvelope className={ContactStyles.icon}/></a>
                         <br/>
-                        <Card.Subtitle className={'mt-1'}>Email</Card.Subtitle>
+                        <Card.Subtitle className={'mt-2'}>Email</Card.Subtitle>
                     </Col>
-                    <Col className={'mb-3'}>
+                    <Col>
                         <a href="https://www.linkedin.com/in/vincentsutinah/"><FaLinkedinIn className={ContactStyles.icon}/></a>
                         <br/>
-                        <Card.Subtitle className={'mt-1'}>LinkedIn</Card.Subtitle>    
+                        <Card.Subtitle className={'mt-2'}>LinkedIn</Card.Subtitle>    
                     </Col>
-                    <Col className={'mb-3'}>
+                    <Col>
                         <a href="https://github.com/vsutinah/"><FaGithub className={ContactStyles.icon}/></a>
                         <br/>
-                        <Card.Subtitle className={'mt-1'}>GitHub</Card.Subtitle>
+                        <Card.Subtitle className={'mt-2'}>GitHub</Card.Subtitle>
                     </Col>
                 </Row>
             </Card>

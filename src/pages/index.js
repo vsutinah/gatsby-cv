@@ -17,18 +17,17 @@ export default function Home() {
     <Fragment>
       <Header/>
       <Layout>
-        <Fade left>
         <Section id='intro'>
             <Intro />
         </Section>
-        </Fade>
-        <Fade right>
+        <Fade left>
         <Section id='about'>
+          <h3>About Me</h3>
           <About />
         </Section>
         </Fade>
         <Section id='skills'>
-          <Fade left>
+          <Fade right>
             <h3>Skills</h3>
           </Fade>
           <Skills/>
@@ -39,18 +38,19 @@ export default function Home() {
             <ProjectSlider/>
         </Section>
         </Fade>
-        <Fade right>
+        <Fade left>
         <Section id='education'>
           <h3>Education</h3>
           <Education />
         </Section>        
         </Fade>
-        <Fade left>
+        <Fade right>
         <Section id='resume'>
+          <h3>Resume</h3>
           <Resume />
         </Section>
         </Fade>
-        <Fade right >
+        <Fade left >
         <Section id='contact'>
           <h3>Contact Me</h3>
           <Contact />  

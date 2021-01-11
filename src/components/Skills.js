@@ -13,27 +13,27 @@ const Skills = () => {
     return (
         <div>
             <Container fluid>
-            <Zoom >
+            <Zoom cascade>
               <Row>
-                <Col>
+                <Col md={true}>
                 <Figure>
                   <Figure.Image src={html5} alt="HTML5"/>
                   <Figure.Caption>HTML</Figure.Caption>
                 </Figure>
                 </Col>
-                <Col>
+                <Col md={true}>
                 <Figure>
                   <Figure.Image src={css} alt="CSS"/>
                   <Figure.Caption>CSS</Figure.Caption>
                 </Figure>
                 </Col>
-                <Col>
+                <Col md={true}>
                 <Figure>
                   <Figure.Image src={javascript} alt="JavaScript"/>
                   <Figure.Caption>JavaScript</Figure.Caption>
                 </Figure>
                 </Col>
-                <Col>
+                <Col md={true}>
                 <Figure>
                   <Figure.Image src={node} alt="Node JS"/>
                   <Figure.Caption>Node JS</Figure.Caption>
@@ -41,21 +41,21 @@ const Skills = () => {
                 </Col>
               </Row>
             </Zoom>
-            <Zoom >
+            <Zoom cascade>
               <Row>
-                <Col>
+                <Col md={true}>
                 <Figure>
                   <Figure.Image src={python} alt="Python"/>
                   <Figure.Caption>Python</Figure.Caption>
                 </Figure>
                 </Col>
-                <Col>
+                <Col md={true}>
                 <Figure>
                   <Figure.Image src={rprogramming} alt="R Programming"/>
                   <Figure.Caption>R</Figure.Caption>
                 </Figure>
                 </Col>
-                <Col>
+                <Col md={true}>
                 <Figure style={{ margin: `2.5rem 0` }}>
                   <Figure.Image src={tableau} alt="Tableau"/>
                   <Figure.Caption style={{ marginTop: `1.75rem`}}>Tableau</Figure.Caption>
