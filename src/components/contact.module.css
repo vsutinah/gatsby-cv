@@ -1,0 +1,13 @@
+.icon {
+  width: 7em;
+  height: 7em;
+  color: black;
+  transition: color 0.75s ease;
+}
+
+.icon:hover {
+  width: 7em;
+  height: 7em;
+  color: #007bff;
+  transition: color 0.75s ease;
+}
