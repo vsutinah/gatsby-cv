@@ -66,6 +66,16 @@ const ProjectSlider = () => {
                 <Card.Footer className='text-muted'><span>Python</span> <span>R</span></Card.Footer>
             </Card>
             </Col>
+            <Col>
+            <Card>
+                <Card.Img height='178px' variant='top' src='https://images.unsplash.com/photo-1608359498106-e4a57b9532b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'></Card.Img>
+                <Card.Body>
+                    <Card.Title>Movie Recommender</Card.Title>
+                    <Card.Text>Currently in development</Card.Text>
+                </Card.Body>
+                <Card.Footer className='text-muted'><span>MongoDB</span> <span>Express</span> <span>ReactJS</span> <span>NodeJS</span></Card.Footer>
+            </Card>
+            </Col>
         </Slider>
     )
 }

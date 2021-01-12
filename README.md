@@ -10,6 +10,8 @@
 
 Using the basic Gatsby Hello World template to generate my own online resume/portfolio.
 
+Version 1.0 has been deployed! You can access my website at <a href='https://vincentsutinah.gtsb.io/'>https://vincentsutinah.gtsb.io/</a>.
+
 Icons / Logos used are from:
 <br/>
 <a href="https://iconscout.com/icons/css" target="_blank">Css Logo Icon</a> by <a href="https://iconscout.com/contributors/pixel-icons" target="_blank">Pixel Icons</a>
