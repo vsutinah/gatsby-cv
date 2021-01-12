@@ -40,7 +40,7 @@ const ProjectSlider = () => {
             <Card>
                 <Card.Img height='178px' variant='top' src='https://images.unsplash.com/photo-1559521783-1d1599583485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'/>
                 <Card.Body>
-                    <Card.Title><a href='yelpcampsutinah.herokuapp.com'>YelpCamp</a></Card.Title>
+                    <Card.Title><a href='https://yelpcampsutinah.herokuapp.com'>YelpCamp</a></Card.Title>
                     <Card.Text>Web app for recommending campsite locations</Card.Text>
                 </Card.Body>
                 <Card.Footer className='text-muted'><span>HTML</span> <span>CSS</span> <span>JavaScript</span></Card.Footer>

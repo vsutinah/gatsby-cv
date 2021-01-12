@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import { FaFileDownload } from 'react-icons/fa'
 import { Card } from 'react-bootstrap'
-import cv from '../static/CV_Vincent Sutinah (SoftDev).pdf'
+import cv from '../static/CV_Vincent Sutinah SoftDev.pdf'
 
 const Resume = () => {
     return (
