@@ -21,7 +21,6 @@ const Header = () => {
         <header>
             <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="mb-5">
                 <Navbar.Brand 
-                style={{ fontSize: `2rem` }} 
                 href="#intro" 
                 className='ml-5'
                 onClick={() => scroller.scrollTo('intro', {

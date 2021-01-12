@@ -2,12 +2,13 @@
   width: 7em;
   height: 7em;
   color: black;
-  transition: color 0.75s ease;
+  transition: all 0.75s ease;
 }
 
 .icon:hover {
   width: 7em;
   height: 7em;
   color: #007bff;
-  transition: color 0.75s ease;
+  transform: translateY(-5px);
+  transition: all 0.75s ease;
 }
