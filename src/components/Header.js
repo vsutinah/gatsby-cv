@@ -1,21 +1,8 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import { Navbar, Nav } from 'react-bootstrap'
 import { scroller } from 'react-scroll'
 
 const Header = () => {
-
-    const data = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
-            }
-        `
-    )
 
     return (
         <header>
@@ -27,7 +14,7 @@ const Header = () => {
                     smooth: true,
                     offset: -70,
                     duration: 400
-                })}>{data.site.siteMetadata.title}</Navbar.Brand>
+                })}>VS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mr-3">

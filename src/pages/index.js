@@ -1,6 +1,8 @@
 import React, { Fragment } from "react"
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
+import SEO from '../components/SEO'
 import Section from '../components/Section'
 import Intro from '../components/Intro'
 import About from '../components/About'
@@ -11,12 +13,13 @@ import Contact from '../components/Contact'
 import Resume from '../components/Resume'
 import Fade from 'react-reveal/Fade'
 
-export default function Home() {
+export default function Home({ data }) {
 
   return (
     <Fragment>
       <Header/>
       <Layout>
+        <SEO title={data.site.siteMetadata.title} description={data.site.siteMetadata.description}/>
         <Section id='intro'>
             <Intro />
         </Section>
@@ -60,3 +63,14 @@ export default function Home() {
     </Fragment>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`
